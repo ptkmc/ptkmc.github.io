@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar header">
+  <div class="container-fluid">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">PM</a>
+    </div>
+    <ul class="menu">
+      <li class="active"><a href="index.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="top-spacer"</div>
+
+<div class="container-fluid project-area">
+  <div class="section-header">Projects</div>
+
+  <div class="btn-container">
+    <button type="button" class="btn-filter selected" onclick="filterSelection('all')" name="category" id="jQueryColorChange">ALL</button>
+    <button type="button" class="btn-filter" onclick="filterSelection('projectDesign')" name="category" id="jQueryColorChange">DESIGN</button>
+    <button type="button" class="btn-filter" onclick="filterSelection('projectPhoto')" name="category" id="jQueryColorChange">PHOTO</button>
+    <button type="button" class="btn-filter" onclick="filterSelection('projectVideo')" name="category" id="jQueryColorChange">VIDEO</button>
+  </div>
+
+  <div class="filterDiv projectDesign">
+    <div class="figure">
+      <a href="design\electronics-user-manual.html"><img class="scaled" src="pics\thumbs\design-lab-manual-thumb.jpg" alt="Electronics User Manual"></img>
+      <figcaption>Electronics User Manual</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectDesign projectVideo">
+    <div class="figure">
+      <a href="video\arduino-explainer-video.html"><img class="scaled" src="pics\thumbs\video-what-is-arduino-thumb.jpg" alt="What is Arduino Video"></img>
+      <figcaption>Arduino Explainer Video</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectDesign">
+    <div class="figure">
+      <a href="design\makexchange-website.html"><img class="scaled" src="pics\thumbs\design-makexchange-website-thumb.jpg" alt="Makexchange Web Slideshow"></img>
+      <figcaption>Makexchange Website</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectDesign">
+    <div class="figure">
+      <a href="design\augmented-reality-mural.html"><img class="scaled" src="pics\thumbs\design-barbershop-phone-thumb.jpg" alt="Augmented Reality Mural"></img>
+      <figcaption>Augmented Reality Mural</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectVideo">
+    <div class="figure">
+      <a href="video\invention-kit-indiegogo.html"><img class="scaled" src="pics\thumbs\video-igg-thumb.jpg" alt="Makexchange Indiegogo Campaign"></img>
+      <figcaption>Invention Kit Indiegogo</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectDesign">
+    <div class="figure">
+      <a href="design/disability-resource-fair.html"><img class="scaled" src="pics\thumbs\design-DAC-Day-Poster-Thumb.jpg" alt="Disability Resource Fair"></img>
+      <figcaption>Disability Resource Fair</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectPhoto">
+    <div class="figure">
+      <a href="photo\crystal-house-glassware.html"><img class="scaled" src="pics\thumbs\photo-crystal-house-thumb.jpg" alt="Crystal House Glassware"></img>
+      <figcaption>Crystal House Glassware</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectVideo">
+    <div class="figure">
+      <a href="video/vixen-mixer-kickstarter.html"><img class="scaled" src="pics\thumbs\video-kvgear-thumb.jpg" alt="Vixen Mixer Kickstarter"></img>
+      <figcaption>Vixen Mixer Kickstarter</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectDesign">
+    <div class="figure">
+      <a href="design\trade-show-banner.html"><img class="scaled" src="pics\thumbs\design-makexchange-banner-thumb.jpg" alt="Trade Show Banner"></img>
+      <figcaption>Trade Show Banner</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectPhoto">
+    <div class="figure">
+      <a href="photo\makexchange-stem-toys.html"><img class="scaled" src="pics\thumbs\photo-mxc-thumb.jpg" alt="Makexchange STEM Toys"></img>
+      <figcaption>Makexchange STEM Toys</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectPhoto">
+    <div class="figure">
+      <a href="photo\outdoors.html"><img class="scaled" src="pics\thumbs\photo-outdoors-thumb.jpg" alt="Outdoors"></img>
+      <figcaption>Outdoors</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectDesign">
+    <div class="figure">
+      <a href="design\stacking-storage-trays.html"><img class="scaled" src="pics\thumbs\design-stacking-trays-thumb.jpg" alt="Stacking Storage Trays (CAD)"></img>
+      <figcaption>Stacking Storage Trays (CAD)</figcaption></a>
+    </div>
+  </div>
+
+  <!-- <div class="filterDiv projectDesign">
+    <div class="figure">
+      <a href="design\email-marketing-campaign.html"><img class="scaled" src="pics\thumbs\design-IGG-referral-campaign-thumb.jpg" alt="Email Marketing Campaign"></img>
+        <figcaption>Email Marketing Campaign</figcaption></a>
+      </div>
+    </div> -->
+
+  <div class="filterDiv projectVideo">
+    <div class="figure">
+      <a href="video\maxwell-emcays-justice.html"><img class="scaled" src="pics\thumbs\video-maxwell-thumb.jpg" alt="Maxwell Emcays - Justice"></img>
+      <figcaption>Maxwell Emcays - Justice</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectDesign">
+    <div class="figure">
+      <a href="design\paper-airplane-printout.html"><img class="scaled" src="pics\thumbs\design-paper-airplane-thumb.jpg" alt="Paper Airplane Printout"></img>
+      <figcaption>Paper Airplane Printout</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectDesign">
+    <div class="figure">
+      <a href="design\tooth-hero-app.html"><img class="scaled" src="pics\thumbs\design-tooth-hero-poster-card-front-thumb.jpg" alt="Tooth Hero App"></img>
+      <figcaption>Tooth Hero App</figcaption></a>
+    </div>
+  </div>
+
+  <div class="filterDiv projectVideo">
+    <div class="figure">
+      <a href="video\video-reel-2016.html"><img class="scaled" src="pics\thumbs\video-reel-thumb.jpg" alt="Video Reel 2016"></img>
+      <figcaption>Video Reel 2016</figcaption></a>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="content-spacer-bottom"></div>
+
+
+<script>
+
+$( "button#jQueryColorChange" ).click(function() {
+  $( ":button" ).removeClass( "selected" );
+  $(this).toggleClass( "selected" );
+});
+
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove
+  // the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    filterRemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) filterAddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function filterAddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function filterRemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+</script>
+</body>
+</html>
