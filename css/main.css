@@ -188,26 +188,26 @@ body {
   .header li {
     float: left;
   }
+
   .header li a {
     padding: 20px 30px;
   }
+
   .header .menu {
     clear: none;
     float: right;
     max-height: none;
   }
+  
   .header .menu-icon {
     display: none;
-  }
-
-  .navbar-brand {
-    padding-left:20px;
   }
 
 }
 
 .navbar-brand {
   color: #666666;
+  padding:20px 20px;
 }
 
 /* End Navbar */
