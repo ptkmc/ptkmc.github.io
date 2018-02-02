@@ -28,18 +28,16 @@
 </nav>
 
 
-<div class="top-spacer"</div>
+<div class="top-spacer"></div>
 
 <div class="container-fluid project-area">
   <div class="section-header">Projects</div>
 
   <div class="btn-container">
-    <!-- <div style="display: block; width: 90%"> -->
     <button type="button" class="btn-filter selected" onclick="filterSelection('all')" name="category" id="jQueryColorChange">ALL</button>
     <button type="button" class="btn-filter" onclick="filterSelection('projectDesign')" name="category" id="jQueryColorChange">DESIGN</button>
     <button type="button" class="btn-filter" onclick="filterSelection('projectPhoto')" name="category" id="jQueryColorChange">PHOTO</button>
     <button type="button" class="btn-filter" onclick="filterSelection('projectVideo')" name="category" id="jQueryColorChange">VIDEO</button>
-  <!-- </div> -->
   </div>
 
   <div class="filterDiv projectDesign">
@@ -126,13 +124,6 @@
     </div>
   </div>
 
-  <!-- <div class="filterDiv projectDesign">
-    <div class="figure">
-      <a href="design\email-marketing-campaign.html"><img class="scaled" src="pics\thumbs\design-IGG-referral-campaign-thumb.jpg" alt="Email Marketing Campaign"></img>
-        <figcaption>Email Marketing Campaign</figcaption></a>
-      </div>
-    </div> -->
-
   <div class="filterDiv projectVideo">
     <div class="figure">
       <a href="video\maxwell-emcays-justice.html"><img class="scaled" src="pics\thumbs\video-maxwell-thumb.jpg" alt="Maxwell Emcays - Justice"></img>
@@ -162,57 +153,10 @@
   </div>
 
 </div>
-</div>
 
 <div class="content-spacer-bottom"></div>
 
+<script src="js/mainScripts.js"></script>
 
-<script>
-
-$( "button#jQueryColorChange" ).click(function() {
-  $( ":button" ).removeClass( "selected" );
-  $(this).toggleClass( "selected" );
-});
-
-
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove
-  // the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    filterRemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) filterAddClass(x[i], "show");
-  }
-}
-
-// Show filtered elements
-function filterAddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
-
-// Hide elements that are not selected
-function filterRemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-</script>
 </body>
 </html>
