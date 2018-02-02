@@ -198,7 +198,7 @@ body {
     float: right;
     max-height: none;
   }
-  
+
   .header .menu-icon {
     display: none;
   }
@@ -262,8 +262,12 @@ body {
   text-align: center;
   margin: 16px;
   display: none; /*Hidden by default */
-  /* box-shadow: 2px 2px 10px grey; */
+}
 
+.figure {
+  margin: 0 auto;
+  width: 255px;
+  box-shadow: 1px 1px 8px 1px grey;
 }
 
 /*The "show" class is added to the filtered elements */
@@ -280,7 +284,6 @@ img.scaled {
   width: 255px;
   height: 144px;
   object-fit: cover;
-  box-shadow: 2px 2px 10px grey;
 }
 
 figcaption {
@@ -291,7 +294,7 @@ figcaption {
   margin: 0 auto;
   width: 100%;
   max-width: 255px;
-  box-shadow: 2px 2px 10px grey;
+  /* box-shadow: 0px 0px 30px 1px #111 inset; */
   padding-top: 7px;
   padding-bottom: 7px;
 }
