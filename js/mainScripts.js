@@ -1,6 +1,6 @@
-$( "button#jQueryColorChange" ).click(function() {
-  $( ":button" ).removeClass( "selected" );
-  $(this).toggleClass( "selected" );
+$(".btn-filter").click(function() {
+  $(":button").removeClass("selected");
+  $(this).toggleClass("selected");
 });
 
 
