@@ -264,7 +264,7 @@ body {
   display: none; /*Hidden by default */
 }
 
-.figure {
+figure {
   margin: 0 auto;
   width: 255px;
   box-shadow: 1px 1px 8px 1px grey;
