@@ -505,6 +505,8 @@ section::after {
 
   .project-area {
     width: auto;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .section-header {
