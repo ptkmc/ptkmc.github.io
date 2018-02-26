@@ -1,5 +1,5 @@
 $(".btn-filter").click(function() {
-  $(":button").removeClass("selected");
+  $(".btn-filter").removeClass("selected");
   $(this).toggleClass("selected");
 });
 
