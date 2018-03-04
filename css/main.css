@@ -216,76 +216,75 @@ body {
 
 .project-area {
   min-height: 100%;
-  max-width: 1600px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
 
 .project-area-inner {
   margin: 0 auto;
-  margin-left: 5%;
   padding: 0;
-  display: grid;
-  grid-template-columns: min-content auto;
-  grid-gap: 20px;
-}
-
-.one {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.two {
-  grid-column: 2;
-  grid-row: 1;
 }
 
 .projects-section-header {
   color: #999;
-  font-size: 34px;
-  line-height: 34px;
+  font-size: 38px;
+  line-height: 38px;
   font-weight: 400;
-  margin: 15px 0px 10px 0px;
+  margin: 15px 0px 15px 15px;
 }
 
 .section-header {
   color: #999;
-  font-size: 34px;
-  line-height: 34px;
+  font-size: 38px;
+  line-height: 38px;
   font-weight: 400;
   margin: 15px 0px 10px 15px;
 }
 
 .btn-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* border: 2px solid #999; */
+  padding: 0 0 10px 15px;
 }
 
 .btn-filter {
-  margin-top: 4px;
-  color: #111;
+  display: inline-block;
+  color: #333;
   font-size: 16px;
   cursor: pointer;
   background-color: inherit;
   border-color: transparent;
   text-decoration: none;
-  align-self: flex-end;
+  padding: 8px;
+  text-transform: uppercase;
 }
 
 .btn-filter:focus {outline:0;}
 
-.selected {
-  color: #ffffff;
-  background-color: #333;
+.btn-filter:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-filter::after{
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.selected, .selected:hover {
+  color: #333;
+  font-weight: bold;
+  border-bottom: 3px solid #333;
 }
 
 .filterDiv {
   color: #ffffff;
   line-height: 20px;
   text-align: center;
-  margin: 15px;
+  margin: 16px;
   display: none; /*Hidden by default */
 }
 
@@ -528,11 +527,6 @@ section::after {
     padding: 0;
   }
 
-  .project-area-inner {
-    margin: 0 auto;
-    display: block;
-  }
-
   .projects-section-header, .section-header {
     margin: 0 auto;
     text-align: center;
@@ -543,7 +537,8 @@ section::after {
     margin: 0 auto;
     width: 100%;
     padding: 10px;
-    flex-direction: row;
+    display: flex;
+    align-items: center;
     border-top: 2px solid #999;
     border-bottom: 2px solid #999;
     margin-bottom: 28px;
@@ -552,8 +547,16 @@ section::after {
   .btn-filter {
     margin: 0 auto;
     width: 100%;
-    padding: 0;
+    padding: 9px 0 0 0;
     height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .selected, .selected:hover {
+    color: #ffffff;
+    background-color: #333;
+    font-weight: normal;
   }
 
   .filterDiv {
