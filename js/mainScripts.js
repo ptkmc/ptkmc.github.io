@@ -1,10 +1,11 @@
-$(".btn-filter").click(function() {
-  $(".btn-filter").removeClass("selected");
-  $(this).toggleClass("selected");
-});
+const btnFilter = document.querySelectorAll('.btn-filter');
+btnFilter.forEach(btn => btn.addEventListener('click', function(){
+  document.querySelector('.selected').classList.remove('selected');
+  this.classList.add('selected');
+}));
 
+filterSelection("all");
 
-filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
