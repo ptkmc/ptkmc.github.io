@@ -285,7 +285,12 @@ body {
   line-height: 20px;
   text-align: center;
   margin: 16px;
-  display: none; /*Hidden by default */
+  display: none;
+}
+
+.figureDiv {
+  float: left;
+  display: inline-block;
 }
 
 figure {
@@ -296,7 +301,7 @@ figure {
 
 /*The "show" class is added to the filtered elements */
 .show {
-  float: left;
+  float: left; 
   display: inline-block;
 }
 
@@ -564,7 +569,6 @@ section::after {
     width: 100%;
     margin-bottom: 20px;
   }
-
 
   .content-spacer-top, .content-spacer-bottom {
     margin-top:40px;
