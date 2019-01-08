@@ -215,10 +215,11 @@ body {
 /* Home Projects */
 
 .project-area {
-  min-height: 100%;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0;
+  max-width: 1200px;
+}
+
+.project-area-3-col {
+  max-width: 895px;
 }
 
 .project-area-inner {
@@ -508,19 +509,23 @@ section::after {
   display:inline-block;
 }
 
-
 .icon {
   width: 40px;
   height: 40px;
   margin-right: 8px;
 }
 
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1194px) {
 
   .project-area {
-    width: auto;
-    margin-left: 75px;
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 907px) {
+
+  .project-area {
+    max-width: 610px;
   }
 }
 
@@ -610,7 +615,7 @@ section::after {
 }
 
 @media screen and (max-width: 320px) {
-
+  
   .btn-filter {
     font-size: 14px;
   }
