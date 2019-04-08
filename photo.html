@@ -1,74 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114392262-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-114392262-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-    gtag('config', 'UA-114392262-1');
-  </script>
-  <title>Patrick McPherson</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="pics/icons/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
-<body>
+      gtag('config', 'UA-114392262-1');
+    </script>
+    <title>Patrick McPherson</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="pics/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar header">
+      <div class="container-fluid">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://ptkmc.github.io/index">PM</a>
+        </div>
+        <ul class="menu">
+          <li class="active">
+            <a href="https://ptkmc.github.io/index">Projects</a>
+          </li>
+          <li><a href="https://ptkmc.github.io/about">About</a></li>
+          <li><a href="https://ptkmc.github.io/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<nav class="navbar header">
-  <div class="container-fluid">
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <div class="navbar-header">
-      <a class="navbar-brand" href="http://pmcpherson.net/index">PM</a>
+    <div class="top-spacer"></div>
+
+    <div class="container-fluid project-area">
+      <div class="section-header">Photo</div>
+
+      <div class="filterDiv figureDiv projectPhoto">
+        <a href="https://ptkmc.github.io/photo/crystal-house-glassware">
+          <figure>
+            <img
+              class="scaled"
+              src="pics/thumbs/photo-crystal-house-thumb.jpg"
+              alt="Crystal House Glassware"
+            />
+            <figcaption>Crystal House Glassware</figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div class="filterDiv figureDiv projectPhoto">
+        <a href="https://ptkmc.github.io/photo/makexchange-stem-toys">
+          <figure>
+            <img
+              class="scaled"
+              src="pics/thumbs/photo-mxc-thumb.jpg"
+              alt="Makexchange STEM Toys"
+            />
+            <figcaption>Makexchange STEM Toys</figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div class="filterDiv figureDiv projectPhoto">
+        <a href="https://ptkmc.github.io/photo/outdoors">
+          <figure>
+            <img
+              class="scaled"
+              src="pics/thumbs/photo-outdoors-thumb.jpg"
+              alt="Outdoors"
+            />
+            <figcaption>Outdoors</figcaption>
+          </figure>
+        </a>
+      </div>
     </div>
-    <ul class="menu">
-      <li class="active"><a href="http://pmcpherson.net/index">Projects</a></li>
-      <li><a href="http://pmcpherson.net/about">About</a></li>
-      <li><a href="http://pmcpherson.net/contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-
-<div class="top-spacer"></div>
-
-<div class="container-fluid project-area">
-  <div class="section-header">Photo</div>
-
-  <div class="filterDiv figureDiv projectPhoto">
-    <a href="http://pmcpherson.net/photo/crystal-house-glassware">
-      <figure>
-      <img class="scaled" src="pics/thumbs/photo-crystal-house-thumb.jpg" alt="Crystal House Glassware" />
-      <figcaption>Crystal House Glassware</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv figureDiv projectPhoto">
-    <a href="http://pmcpherson.net/photo/makexchange-stem-toys">
-      <figure>
-      <img class="scaled" src="pics/thumbs/photo-mxc-thumb.jpg" alt="Makexchange STEM Toys" />
-      <figcaption>Makexchange STEM Toys</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv figureDiv projectPhoto">
-    <a href="http://pmcpherson.net/photo/outdoors">
-      <figure>
-      <img class="scaled" src="pics/thumbs/photo-outdoors-thumb.jpg" alt="Outdoors" />
-      <figcaption>Outdoors</figcaption>
-    </figure>
-    </a>
-  </div>
-
-</div>
-
-</body>
+  </body>
 </html>

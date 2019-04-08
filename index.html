@@ -1,203 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114392262-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-114392262-1');
-  </script>
-  <title>Patrick McPherson</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="pics/icons/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-114392262-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-114392262-1');
+    </script>
+    <title>Patrick McPherson</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="pics/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar header">
+      <div class="container-fluid">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://ptkmc.github.io">PM</a>
+        </div>
+        <ul class="menu">
+          <li class="active">
+            <a href="https://ptkmc.github.io/index">Projects</a>
+          </li>
+          <li><a href="https://ptkmc.github.io/about">About</a></li>
+          <li><a href="https://ptkmc.github.io/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<nav class="navbar header">
-  <div class="container-fluid">
-    <input class="menu-btn" type="checkbox" id="menu-btn">
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <div class="navbar-header">
-      <a class="navbar-brand" href="http://pmcpherson.net/index">PM</a>
+    <div class="top-spacer"></div>
+
+    <div class="container-fluid project-area">
+      <div class="project-area-inner">
+        <div class="projects-section-header">Projects</div>
+        <div class="btn-container">
+          <a class="btn-filter selected" onclick="filterSelection('all')"
+            >All</a
+          >
+          <a class="btn-filter" onclick="filterSelection('projectDesign')"
+            >Design</a
+          >
+          <a class="btn-filter" onclick="filterSelection('projectPhoto')"
+            >Photo</a
+          >
+          <a class="btn-filter" onclick="filterSelection('projectVideo')"
+            >Video
+          </a>
+        </div>
+
+        <div class="filterDiv projectDesign">
+          <a href="https://ptkmc.github.io/design/electronics-user-manual">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/design-lab-manual-thumb.jpg"
+                alt="Electronics User Manual"
+              />
+              <figcaption>Electronics User Manual</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectVideo">
+          <a href="https://ptkmc.github.io/video/invention-kit-indiegogo">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/video-igg-thumb.jpg"
+                alt="Makexchange Indiegogo Campaign"
+              />
+              <figcaption>Invention Kit Indiegogo</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectDesign">
+          <a href="https://ptkmc.github.io/design/makexchange-website">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/design-makexchange-website-thumb.jpg"
+                alt="Makexchange Web Slideshow"
+              />
+              <figcaption>Makexchange Website</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectVideo">
+          <a href="https://ptkmc.github.io/video/vixen-mixer-kickstarter">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/video-kvgear-thumb.jpg"
+                alt="Vixen Mixer Kickstarter"
+              />
+              <figcaption>Vixen Mixer Kickstarter</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectDesign projectVideo">
+          <a href="https://ptkmc.github.io/video/arduino-explainer-video">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/video-what-is-arduino-thumb.jpg"
+                alt="What is Arduino Video"
+              />
+              <figcaption>Arduino Explainer Video</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectDesign">
+          <a href="https://ptkmc.github.io/design/stacking-storage-trays">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/design-stacking-trays-thumb.jpg"
+                alt="Stacking Storage Trays (CAD)"
+              />
+              <figcaption>Stacking Storage Trays (CAD)</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectDesign">
+          <a href="https://ptkmc.github.io/design/augmented-reality-mural">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/design-barbershop-phone-thumb.jpg"
+                alt="Augmented Reality Mural"
+              />
+              <figcaption>Augmented Reality Mural</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectDesign">
+          <a href="https://ptkmc.github.io/design/trade-show-banner">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/design-makexchange-banner-thumb.jpg"
+                alt="Trade Show Banner"
+              />
+              <figcaption>Trade Show Banner</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectDesign">
+          <a href="https://ptkmc.github.io/design/disability-resource-fair">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/design-dac-day-poster-thumb.jpg"
+                alt="Disability Resource Fair"
+              />
+              <figcaption>Disability Resource Fair</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectPhoto">
+          <a href="https://ptkmc.github.io/photo/crystal-house-glassware">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/photo-crystal-house-thumb.jpg"
+                alt="Crystal House Glassware"
+              />
+              <figcaption>Crystal House Glassware</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectPhoto">
+          <a href="https://ptkmc.github.io/photo/makexchange-stem-toys">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/photo-mxc-thumb.jpg"
+                alt="Educational Toys"
+              />
+              <figcaption>Educational Toys</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectPhoto">
+          <a href="https://ptkmc.github.io/photo/outdoors">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/photo-outdoors-thumb.jpg"
+                alt="Outdoors"
+              />
+              <figcaption>Outdoors</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectVideo">
+          <a href="https://ptkmc.github.io/video/maxwell-emcays-justice">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/video-maxwell-thumb.jpg"
+                alt="Maxwell Emcays - Justice"
+              />
+              <figcaption>Maxwell Emcays - Justice</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectDesign">
+          <a href="https://ptkmc.github.io/design/paper-airplane-printout">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/design-paper-airplane-thumb.jpg"
+                alt="Paper Airplane Printout"
+              />
+              <figcaption>Paper Airplane Printout</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectDesign">
+          <a href="https://ptkmc.github.io/design/tooth-hero-app">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/design-tooth-hero-poster-card-front-thumb.jpg"
+                alt="Tooth Hero App"
+              />
+              <figcaption>Tooth Hero App</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="filterDiv projectVideo">
+          <a href="https://ptkmc.github.io/video/video-reel-2016">
+            <figure>
+              <img
+                class="scaled"
+                src="pics/thumbs/video-reel-thumb.jpg"
+                alt="Video Reel 2016"
+              />
+              <figcaption>Video Reel 2016</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
     </div>
-    <ul class="menu">
-      <li class="active"><a href="http://pmcpherson.net/index">Projects</a></li>
-      <li><a href="http://pmcpherson.net/about">About</a></li>
-      <li><a href="http://pmcpherson.net/contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
 
-<div class="top-spacer"></div>
+    <div class="content-spacer-bottom"></div>
 
-<div class="container-fluid project-area">
-  <div class="project-area-inner">
-
-  <div class="projects-section-header">Projects</div>
-  <div class="btn-container">
-    <a class="btn-filter selected" onclick="filterSelection('all')">All</a>
-    <a class="btn-filter" onclick="filterSelection('projectDesign')">Design</a>
-    <a class="btn-filter" onclick="filterSelection('projectPhoto')">Photo</a>
-    <a class="btn-filter" onclick="filterSelection('projectVideo')">Video </a>
-  </div>
-
-  <div class="filterDiv projectDesign">
-    <a href="http://pmcpherson.net/design/electronics-user-manual">
-      <figure>
-        <img class="scaled" src="pics/thumbs/design-lab-manual-thumb.jpg" alt="Electronics User Manual" />
-        <figcaption>Electronics User Manual</figcaption>
-      </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectVideo">
-    <a href="http://pmcpherson.net/video/invention-kit-indiegogo">
-      <figure>
-      <img class="scaled" src="pics/thumbs/video-igg-thumb.jpg" alt="Makexchange Indiegogo Campaign" />
-      <figcaption>Invention Kit Indiegogo</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectDesign">
-    <a href="http://pmcpherson.net/design/makexchange-website">
-      <figure>
-      <img class="scaled" src="pics/thumbs/design-makexchange-website-thumb.jpg" alt="Makexchange Web Slideshow" />
-      <figcaption>Makexchange Website</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectVideo">
-    <a href="http://pmcpherson.net/video/vixen-mixer-kickstarter">
-      <figure>
-      <img class="scaled" src="pics/thumbs/video-kvgear-thumb.jpg" alt="Vixen Mixer Kickstarter" />
-      <figcaption>Vixen Mixer Kickstarter</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectDesign projectVideo">
-    <a href="http://pmcpherson.net/video/arduino-explainer-video">
-      <figure>
-      <img class="scaled" src="pics/thumbs/video-what-is-arduino-thumb.jpg" alt="What is Arduino Video" />
-      <figcaption>Arduino Explainer Video</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectDesign">
-    <a href="http://pmcpherson.net/design/stacking-storage-trays">
-      <figure>
-      <img class="scaled" src="pics/thumbs/design-stacking-trays-thumb.jpg" alt="Stacking Storage Trays (CAD)" />
-      <figcaption>Stacking Storage Trays (CAD)</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectDesign">
-    <a href="http://pmcpherson.net/design/augmented-reality-mural">
-      <figure>
-      <img class="scaled" src="pics/thumbs/design-barbershop-phone-thumb.jpg" alt="Augmented Reality Mural" />
-      <figcaption>Augmented Reality Mural</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectDesign">
-    <a href="http://pmcpherson.net/design/trade-show-banner">
-      <figure>
-      <img class="scaled" src="pics/thumbs/design-makexchange-banner-thumb.jpg" alt="Trade Show Banner" />
-      <figcaption>Trade Show Banner</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectDesign">
-    <a href="http://pmcpherson.net/design/disability-resource-fair">
-      <figure>
-      <img class="scaled" src="pics/thumbs/design-dac-day-poster-thumb.jpg" alt="Disability Resource Fair" />
-      <figcaption>Disability Resource Fair</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectPhoto">
-    <a href="http://pmcpherson.net/photo/crystal-house-glassware">
-      <figure>
-      <img class="scaled" src="pics/thumbs/photo-crystal-house-thumb.jpg" alt="Crystal House Glassware" />
-      <figcaption>Crystal House Glassware</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectPhoto">
-    <a href="http://pmcpherson.net/photo/makexchange-stem-toys">
-      <figure>
-      <img class="scaled" src="pics/thumbs/photo-mxc-thumb.jpg" alt="Educational Toys" />
-      <figcaption>Educational Toys</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectPhoto">
-    <a href="http://pmcpherson.net/photo/outdoors">
-      <figure>
-      <img class="scaled" src="pics/thumbs/photo-outdoors-thumb.jpg" alt="Outdoors" />
-      <figcaption>Outdoors</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectVideo">
-    <a href="http://pmcpherson.net/video/maxwell-emcays-justice">
-      <figure>
-      <img class="scaled" src="pics/thumbs/video-maxwell-thumb.jpg" alt="Maxwell Emcays - Justice" />
-      <figcaption>Maxwell Emcays - Justice</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectDesign">
-    <a href="http://pmcpherson.net/design/paper-airplane-printout">
-      <figure>
-      <img class="scaled" src="pics/thumbs/design-paper-airplane-thumb.jpg" alt="Paper Airplane Printout" />
-      <figcaption>Paper Airplane Printout</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectDesign">
-    <a href="http://pmcpherson.net/design/tooth-hero-app">
-      <figure>
-      <img class="scaled" src="pics/thumbs/design-tooth-hero-poster-card-front-thumb.jpg" alt="Tooth Hero App" />
-      <figcaption>Tooth Hero App</figcaption>
-    </figure>
-    </a>
-  </div>
-
-  <div class="filterDiv projectVideo">
-    <a href="http://pmcpherson.net/video/video-reel-2016">
-      <figure>
-      <img class="scaled" src="pics/thumbs/video-reel-thumb.jpg" alt="Video Reel 2016" />
-      <figcaption>Video Reel 2016</figcaption>
-    </figure>
-    </a>
-  </div>
-
-</div>
-
-</div>
-
-<div class="content-spacer-bottom"></div>
-
-<script src="js/mainScripts.js"></script>
-
-</body>
+    <script src="js/mainScripts.js"></script>
+  </body>
 </html>
